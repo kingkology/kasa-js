@@ -1,0 +1,32 @@
+{
+  "name": "arkesel-js",
+  "version": "1.0.0",
+  "description": "This package enables sending of sms from your javascript  application using https://sms.arkesel.com as a service provider.",
+  "main": "Arkesel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanadjei/arkesel-js.git"
+  },
+  "keywords": [
+    "arkesel",
+    "sms",
+    "api",
+    "send",
+    "sms",
+    "node",
+    "sms"
+  ],
+  "author": "nana.elvee@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanadjei/arkesel-js/issues"
+  },
+  "homepage": "https://github.com/nanadjei/arkesel-js#readme"
+}
