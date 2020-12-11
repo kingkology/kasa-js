@@ -1,5 +1,5 @@
-import axios from 'axios';
-import config from "./config/arkesel.js";
+const axios = require('axios');
+const config = require("./config/arkesel.js");
 /**
  * Arkesel Api docs url: https://sms.arkesel.com/sms/api?action=send-sms&api_key=api_key&to=phone_number&from=sender_id&sms=some_nice_message
  */
@@ -40,7 +40,7 @@ class Arkesel
     }
 
     /** 
-     * sender_id is the name that will oppear on the receiver's phone.
+     * @param { String } senderId is the name that will oppear on the receiver's phone.
      * This can be overwritten.
      */
     setSenderId(senderId)
@@ -56,6 +56,16 @@ class Arkesel
     getSenderId() 
     {
         return this.sender_id;
+    }
+
+    /**
+     * Specify who is sending the sms
+     * @param { String } senderId is the name that will oppear on the receiver's phone.
+     */
+    from(senderId) 
+    {
+        this.setSenderId(senderId);
+        return this;
     }
 
     /** 
@@ -144,4 +154,4 @@ class Arkesel
     }
 }
 
-export default Arkesel;
+module.exports =  Arkesel;
