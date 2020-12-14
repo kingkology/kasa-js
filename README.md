@@ -7,7 +7,7 @@ This package enables sending of sms from your javascript application using [Arke
 You can install the package via npm:
 
 ```bash
-npm install nanadjei2/arkesel-js
+npm install arkesel-js
 ```
 
 ## Setting API key in .env file
