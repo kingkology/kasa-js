@@ -1,6 +1,6 @@
 {
   "name": "arkesel-js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This package enables sending of sms from your javascript  application using https://sms.arkesel.com as a service provider.",
   "main": "Arkesel.js",
   "scripts": {
