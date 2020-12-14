@@ -1,6 +1,6 @@
 # Arkesel SMS Javascript Library
 
-This package enables sending of sms from your javascript application using https://sms.arkesel.com as a service provider.
+This package enables sending of sms from your javascript application using [Arkesel](https://sms.arkesel.com) as a service provider.
 
 ## Requirements & Installation
 
@@ -10,7 +10,7 @@ You can install the package via npm:
 npm install nanadjei2/arkesel-js
 ```
 
-# Setting API key in .env file
+## Setting API key in .env file
 
 Before you can start sending sms you will need to set your api key and default sender ID in your /.env file
 You can find your api key here `https://sms.arkesel.com/user/sms-api/info`
@@ -24,7 +24,7 @@ ARKESEL_SMS_API_KEY=YourKeyGoesHere
 ## Usage Examples
 
 ```js
-import Arkesel from "arkesel-js";
+const Arkesel from "arkesel-js";
 
 $sms = new Arkesel("SenderId", "smsApiKey");
 ```
