@@ -76,8 +76,7 @@ sms.balance((callback) => console.log(callback));
 ## Check balance of a different a arkesel account account
 
 ```js
-sms.withFreshApiKey('API_KEY_GOES_HERE')
-    ->balance(
+sms.withFreshApiKey('API_KEY_GOES_HERE')balance(
         (callback) => // console.log(callback)
     );
 ```
