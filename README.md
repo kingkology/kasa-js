@@ -26,7 +26,7 @@ ARKESEL_SMS_API_KEY=YourKeyGoesHere
 ```js
 const Arkesel from "arkesel-js";
 
-$sms = new Arkesel("SenderId", "smsApiKey");
+const sms = new Arkesel("SenderId", "smsApiKey");
 ```
 
 ## Basic sending(uses api_key set in .env file)
@@ -34,7 +34,7 @@ $sms = new Arkesel("SenderId", "smsApiKey");
 ```js
 // successful response: {"code":"ok","message":"Successfully Send","balance":58995,"user":"Adinkra Pie"}
 // error response: {"code":"102","message":"Authentication Failed"}
-$sms->send('02XXXXXXXXX', 'Your pie will be ready in 5 mins', timestamp = 'In case you want to schedule',
+sms.send('02XXXXXXXXX', 'Your pie will be ready in 5 mins', timestamp = 'In case you want to schedule',
         (callback) => // console.log(callback)
     );
 ```
@@ -42,8 +42,7 @@ $sms->send('02XXXXXXXXX', 'Your pie will be ready in 5 mins', timestamp = 'In ca
 ## To use a different api key at runtime
 
 ```js
-$sms->withFreshApiKey('API_KEY_GOES_HERE')
-    ->send('02XXXXXXXX', 'We want to confirm your destination. Adum post office right?', null,
+sms.withFreshApiKey('API_KEY_GOES_HERE').send('02XXXXXXXX', 'We want to confirm your destination. Adum post office right?', null,
         (callback) => // console.log(callback)
     );
 ```
@@ -51,8 +50,7 @@ $sms->withFreshApiKey('API_KEY_GOES_HERE')
 ## To customise sender Id (must not be more than 11 characters)
 
 ```js
-$sms->from('CompanyName')
-    ->send('02XXXXXXXX', 'Your pie is ready for dispatch.', null,
+sms.from('CompanyName').send('02XXXXXXXX', 'Your pie is ready for dispatch.', null,
         (callback) => // console.log(callback)
     );
 ```
@@ -62,8 +60,8 @@ $sms->from('CompanyName')
 ```js
 // successful response: {"code":"109","message":"Invalid Schedule Time"}
 // successful response: {"code":"ok","message":"SMS Scheduled successfully.","balance":58995,"user":"Adinkra Pie"}
-$dateTime ='04-05-2020 06:19 PM'; // Must be this format - "d-m-Y h:i A"
-$sms->schedule($dateTime, '02XXXXXXXX', 'We have arrived at your destination.',
+const dateTime ='04-05-2020 06:19 PM'; // Must be this format - "d-m-Y h:i A"
+sms.schedule(dateTime, '02XXXXXXXX', 'We have arrived at your destination.',
         (callback) => // console.log(callback)
     )
 ```
@@ -72,13 +70,13 @@ $sms->schedule($dateTime, '02XXXXXXXX', 'We have arrived at your destination.',
 
 ```js
 // successful response: {"balance":58995,"user":"Adinkra Pie","country":"Ghana"}
-$sms->balance((callback) => console.log(callback));
+sms.balance((callback) => console.log(callback));
 ```
 
 ## Check balance of a different a arkesel account account
 
 ```js
-$sms->withFreshApiKey('API_KEY_GOES_HERE')
+sms.withFreshApiKey('API_KEY_GOES_HERE')
     ->balance(
         (callback) => // console.log(callback)
     );
