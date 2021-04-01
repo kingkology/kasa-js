@@ -1,32 +1,32 @@
-# Arkesel SMS Javascript Library
+# Kasa SMS Javascript Library
 
-This package enables sending of sms from your javascript application using [Arkesel](https://sms.arkesel.com) as a service provider.
+This package enables sending of sms from your javascript application using [Kasa](https://sms.kasa.com) as a service provider.
 
 ## Requirements & Installation
 
 You can install the package via npm:
 
 ```bash
-npm install arkesel-js
+npm install kasa-js
 ```
 
 ## Setting API key in .env file
 
 Before you can start sending sms you will need to set your api key and default sender ID in your /.env file
-You can find your api key here `https://sms.arkesel.com/user/sms-api/info`
+You can find your api key here `https://sms.kasa.com/user/sms-api/info`
 These config files can be changed from the laravel application.
 
 <!-- /.env file -->
 
-ARKESEL_SMS_SENDER_ID=MyApp\
-ARKESEL_SMS_API_KEY=YourKeyGoesHere
+KASA_SMS_SENDER_ID=MyApp\
+KASA_SMS_API_KEY=YourKeyGoesHere
 
 ## Usage Examples
 
 ```js
-const Arkesel from "arkesel-js";
+const Kasa from "kasa-js";
 
-const sms = new Arkesel("SenderId", "smsApiKey");
+const sms = new Kasa("SenderId", "smsApiKey");
 ```
 
 ## Basic sending(uses api_key set in .env file)
@@ -73,7 +73,7 @@ sms.schedule(dateTime, '02XXXXXXXX', 'We have arrived at your destination.',
 sms.balance((callback) => console.log(callback));
 ```
 
-## Check balance of a different a arkesel account account
+## Check balance of a different a kasa account account
 
 ```js
 sms.withFreshApiKey('API_KEY_GOES_HERE')balance(
