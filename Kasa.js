@@ -1,7 +1,7 @@
 const axios = require('axios');
 const config = require("./config/kasa.js");
 /**
- * Kasa Api docs url: https://sms.arkesel.com/sms/api?action=send-sms&api_key=api_key&to=phone_number&from=sender_id&sms=some_nice_message
+ * Kasa Api docs url: https://kasa.philangie.com/sms/api?action=send-sms&api_key=api_key&to=phone_number&from=sender_id&sms=some_nice_message
  */
 
 class Kasa
@@ -10,7 +10,7 @@ class Kasa
     VERSION = "0.1.0";
 
     /** Url for sending sms */
-    SMS_ENDPOINT = "https://sms.arkesel.com/sms/api";
+    SMS_ENDPOINT = "https://kasa.philangie.com/sms/api";
 
     /** Then name of the sender */
     sender_id;
