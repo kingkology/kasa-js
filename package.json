@@ -9,7 +9,6 @@
   "dependencies": {
     "axios": "^0.21.0"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adzamkomladev/kasa-js.git"
