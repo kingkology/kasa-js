@@ -1,4 +1,6 @@
-# Kasa SMS Javascript Library
+# Please note: This library is a forked version of the main library [arkesel-js](https://github.com/nanadjei/arkesel-js). This is to enable us utilize the kasa platform. I do not own the rights to this library.
+
+# Kasa SMS Javascript Library 
 
 This package enables sending of sms from your javascript application using [Kasa](https://sms.kasa.com) as a service provider.
 
