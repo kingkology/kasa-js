@@ -2,7 +2,7 @@
 
 # Kasa SMS Javascript Library 
 
-This package enables sending of sms from your javascript application using [Kasa](https://kasa.philangie.com) as a service provider.
+This package enables sending of sms from your javascript application using [Kasa](http://kasa.philangie.com) as a service provider.
 
 ## Requirements & Installation
 
@@ -15,7 +15,7 @@ npm install kasa-js
 ## Setting API key in .env file
 
 Before you can start sending sms you will need to set your api key and default sender ID in your /.env file
-You can find your api key here `https://kasa.philangie.com/user/sms-api/info`
+You can find your api key here `http://kasa.philangie.com/user/sms-api/info`
 These config files can be changed from the laravel application.
 
 <!-- /.env file -->
