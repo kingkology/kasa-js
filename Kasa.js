@@ -1,10 +1,10 @@
 const axios = require('axios');
-const config = require("./config/arkesel.js");
+const config = require("./config/kasa.js");
 /**
- * Arkesel Api docs url: https://sms.arkesel.com/sms/api?action=send-sms&api_key=api_key&to=phone_number&from=sender_id&sms=some_nice_message
+ * Kasa Api docs url: https://sms.arkesel.com/sms/api?action=send-sms&api_key=api_key&to=phone_number&from=sender_id&sms=some_nice_message
  */
 
-class Arkesel
+class Kasa
 {
     /** Package version @return string */
     VERSION = "0.1.0";
@@ -154,4 +154,4 @@ class Arkesel
     }
 }
 
-module.exports =  Arkesel;
+module.exports =  Kasa;
