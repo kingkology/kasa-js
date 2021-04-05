@@ -2,7 +2,7 @@
 
 # Kasa SMS Javascript Library 
 
-This package enables sending of sms from your javascript application using [Kasa](https://sms.kasa.com) as a service provider.
+This package enables sending of sms from your javascript application using [Kasa](https://kasa.philangie.com) as a service provider.
 
 ## Requirements & Installation
 
