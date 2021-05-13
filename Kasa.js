@@ -10,7 +10,7 @@ class Kasa
     VERSION = "0.1.0";
 
     /** Url for sending sms */
-    SMS_ENDPOINT = "http://kasa.philangie.com/sms/api";
+    SMS_ENDPOINT = "https://kasa.philangie.com/sms/api";
 
     /** Then name of the sender */
     sender_id;
